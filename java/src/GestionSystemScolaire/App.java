@@ -4,8 +4,9 @@ import java.util.Date;
 
 public class App {
 
-    public static void initialisation() {
+    public static void main(String[] args) {
 
+        // INITIALISATION
         Cours cour1 = new Cours("CPOA", 3);
 
         Devoir test1 = new Devoir("UML", "Savoir utiliser l'UML", new Date(2021, 9, 21), 12.0);
@@ -18,11 +19,13 @@ public class App {
 
         Etudiant e1 = new Etudiant("Viguier", "Enzo", "Rue Blabla", "enzo.viguier@etu.umontpellier.fr", "111111");
         Etudiant e2 = new Etudiant("Potichat", "Alex", "Rue de la ruelle", "alex.potichat@etu.umontpellier.fr", "222222");
+        //
 
-    }
+        a1.participerCours(cour1);
+        e1.participerCours(cour1);
+        e2.participerCours(cour1);
 
-    public static void main(String[] args) {
-
+        cour1.effectifDansLeCours();
 
 
     }

@@ -27,6 +27,14 @@ public class Enseignant extends Utilisateur {
      */
     private String harpege;
 
+    public void participerCours(Cours a) {
+        a.setCDC(this);
+        System.out.println("L'enseignant " + this.getNom()  + " " + this.getPrenom() + " participe au cours de " + a.getNom());
 
+    }
 
+    @Override
+    public String toString() {
+        return "L'enseignant : " + this.getNom() + " " + this.getPrenom();
+    }
 }
