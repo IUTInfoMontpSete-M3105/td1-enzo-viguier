@@ -59,20 +59,18 @@ public abstract class Utilisateur {
         Scanner saisie3 = new Scanner(System.in);
         Scanner saisie4 = new Scanner(System.in);
 
-        try {
-            System.out.println("Veuillez remplir les informations de votre profil :");
-            System.out.println("Votre nom : ");
-            String a1 = saisie1.next();
-            System.out.println("Votre prénom : ");
-            String a2 = saisie2.next();
-            System.out.println("Votre adresse : ");
-            String a3 = saisie3.next();
-            System.out.println("Votre mail : ");
-            String a4 = saisie4.next();
-            System.out.println("Changement confirmé");
-        } catch (Exception a) {
-            System.out.println("Erreur");
-        }
+        System.out.println("Veuillez remplir les informations de votre profil :");
+        System.out.println("Votre nom : ");
+        String a1 = saisie1.next();
+        System.out.println("Votre prénom : ");
+        String a2 = saisie2.next();
+        System.out.println("Votre adresse : ");
+        String a3 = saisie3.next();
+        System.out.println("Votre mail : ");
+        String a4 = saisie4.next();
+        System.out.println("Changement confirmé");
+
+
 
     }
 
@@ -82,5 +80,13 @@ public abstract class Utilisateur {
 
     public String getPrenom() {
         return prenom;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public String getMail() {
+        return mail;
     }
 }
